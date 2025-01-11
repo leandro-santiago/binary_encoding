@@ -18,7 +18,7 @@ def bin_level(
     requires_grad=False,
     **kwargs,
 ) -> BSCTensor:
-    """Creates a set of level based on Scatter Code.    
+    """Creates a set of binary level based on Scatter Code.    
 
     Args:
         num_vectors (int): the number of hypervectors to generate.
@@ -26,15 +26,7 @@ def bin_level(
         dtype (``torch.dtype``, optional): the desired data type of returned tensor. Default: if ``None`` depends on VSATensor.
         device (``torch.device``, optional):  the desired device of returned tensor. Default: if ``None``, uses the current device for the default tensor type (see torch.set_default_tensor_type()). ``device`` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.
         requires_grad (bool, optional): If autograd should record operations on the returned tensor. Default: ``False``.
-
-    Examples::
-
-        >>> level(5, 6)
-        tensor([[ True,  True,  True,  True, False, False],
-                [ True,  True,  True,  True, False, False],
-                [False,  True,  True,  True,  True, False],
-                [False,  True,  True,  True,  True, False],
-                [False,  True,  True,  True,  True, False]])
+    
     """
     vsa_tensor = BSCTensor
 
