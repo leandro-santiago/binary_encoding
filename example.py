@@ -1,16 +1,3 @@
-## Binary Enconding
-
-- Scatter Code
-
-## Requeriments
-
-- torch
-- torch-hd
-
-## Examples
-
-
-```python
 import torch
 from embeddings import ScatterCode
 
@@ -30,4 +17,3 @@ print(coding(number))
 for i in range(min_val, max_val + 1):
     number = torch.tensor(i)
     print(i, " => ", coding(number))
-```
